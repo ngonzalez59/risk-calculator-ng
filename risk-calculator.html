@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Risk Calcualtor</title>
+</head>
+<body>
+
+<h1>************Health Insurance Risk Calculator************</h1>
+<p>This will be assessing your risk factor as it takes
+    into account your age, blood pressure, family history
+    of disease, and your body-mass index(bmi). Please be sure 
+    to enter appropriate values.
+</p>
+
+<div><label>**How Old Are You?**</label>
+<select id="ageID">
+    <option value="0">Less than 30</option>
+    <option value="10">30-45</option>
+    <option value="20">45-60</option>
+    <option value="30">Greater than 60</option>
+</select>
+
+<div>
+    <p>**What is your height (in ft)? Be sure to enter both
+        feet and inches.**</p>
+  
+        <input type="text" id="height">
+  
+        <p>What is your weight (in lbs)?</p>
+  
+        <input type="text" id="weight">
+  
+        <button id="button">Calculate</button>
+  
+        <div id="result"></div>
+</div>
+
+<br/> <br/>
+
+<div>Systolic pressure (SP):<span></span></div>
+        <div>
+            <input id="sp" type="text">
+        </div>
+
+        <div>Diastolic pressure (DP):<span></span></div>
+        <div>
+            <input id="dp" type="text">
+        </div>
+
+          <input type="submit" name="submit" value="Calculate" onclick="check()" />
+<div id="Calculate"></div>
+
+<br/> <br/>
+
+<label>**Do you have diabetes?**</label>
+<select id="diabetesresponse">
+    <option value="10">Yes</option>
+    <option value="0">No</option>
+
+</select>
+
+<br/> <br/>
+
+<label>**Do you have cancer?**</label>
+<select id="cancerresponse">
+    <option value="10">Yes</option>
+    <option value="0">No</option>
+</select>
+
+<br/> <br/>
+
+<label>**Do you have Alzheimer's?**</label>
+<select id="alzheimer'sresponse">
+    <option value="10">Yes</option>
+    <option value="0">No</option>
+</select>
+
+
+<h2>Based on these scores, you are ...</h2>
+<h2>Thank you for your honesty!</h2>
+
+<br/><br/>
+</div>
+
+</body>
+</html>
